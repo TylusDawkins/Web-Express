@@ -14,7 +14,6 @@ Web-Express
  ### This is a website design template for personal websites/small businesses. In it's conception it will be made for a free-lancer to quickly and easily build custom websites to fit client needs.
  &nbsp;
  
- &nbsp;
  ### ***Technologies***
  * HTML
  * CSS
