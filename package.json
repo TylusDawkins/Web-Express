@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mongodb": "^4.5.0",
+    "svelte-i18n": "^3.4.0"
+  }
+}
