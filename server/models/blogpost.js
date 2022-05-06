@@ -5,12 +5,10 @@ const Schema  = mongoose.Schema
 const BlogPost = new Schema(
     {
         name: {type: String, required: true},
-        type: {type: String, required: true},
-        description: {type: String, required: true},
-        image: {type: String, required: true},
-        colors: {type: Array, required: true},
-        band: {type: String, required: true},
-        price: {type: Number, required:true},
+        header: {type: String, required: true},
+        entry: {type: String, required: true},
+        date: {type: Date, required: true},
+        Image: {type: String, required: true},
     },
 
     {timestamps: true}
