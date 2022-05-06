@@ -4,8 +4,8 @@ const { post } = require('../routes');
 
 const getAllBlogPosts = async (req, res) => {
     try {
-        const data = await BlogPosts.find()
-        return res.status(200).json({ data })
+        const blogPosts = await BlogPost.find()
+        return res.status(200).json({ blogPosts })
     } catch (error) {
         return res.status(500).send(error.message);
     }
@@ -14,30 +14,30 @@ const getAllBlogPosts = async (req, res) => {
 const getBlogById = async (req, res) => {
     try {
         const { id } = req.params;
-        const post = await BlogPosts.findById(id)
-        if (item) {
-            return res.status(200).json({ post });
+        const blogPost = await blogPost.findById(id)
+        if (blogPost) {
+            return res.status(200).json({ blogPost });
         }
         return res.status(404).send('item with the specified ID does not exists');
     } catch (error) {
         return res.status(500).send(error.message);
     }
 }
-const createPost = async (req, res) => {
+const createBlogPost = async (req, res) => {
     try {
-        const Post = await new BlogPosts(req.body)
-        await item.save()
+        const blogPost = await new BlogPost(req.body)
+        await blogPost.save()
         return res.status(201).json({
-            item,
+            blogPost,
         });
     } catch (error) {
         return res.status(500).json({ error: error.message })
 
     }
 }
-const updateItem = async (req,res) =>{
+const updateBlogPost = async (req,res) =>{
     try{
-        res.status(200).json(await Jewelry.findByIdAndUpdate(req.params.id, req.body))
+        res.status(200).json(await BlogPost.findByIdAndUpdate(req.params.id, req.body))
     } catch (error) {
         return res.status(500).json({ error: error.message })
 
@@ -45,9 +45,9 @@ const updateItem = async (req,res) =>{
 }
 
 
-const deleteItem = async (req,res) =>{
+const deleteBlogPost = async (req,res) =>{
     try{
-        res.status(200).json(await Jewelry.findByIdAndDelete(req.params.id))
+        res.status(200).json(await BlogPost.findByIdAndDelete(req.params.id))
     } catch (error) {
         return res.status(500).json({ error: error.message })
     }
@@ -56,7 +56,7 @@ const deleteItem = async (req,res) =>{
 module.exports = {
     getAllBlogPosts,
     getBlogById,
-    createItem,
-    deleteItem,
-    updateItem
+    createBlogPost,
+    updateBlogPost,
+    deleteBlogPost
 }
