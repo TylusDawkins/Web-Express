@@ -1,5 +1,4 @@
 const BlogPost = require('../models/blogpost');
-const { post } = require('../routes');
 
 
 const getAllBlogPosts = async (req, res) => {
