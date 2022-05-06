@@ -4,11 +4,10 @@ const Schema  = mongoose.Schema
 
 const BlogPost = new Schema(
     {
-        name: {type: String, required: true},
-        header: {type: String, required: true},
+        title: {type: String, required: true},
         entry: {type: String, required: true},
-        date: {type: Date, required: true},
-        Image: {type: String, required: true},
+        date: {type: Date, default:Date(), required: true},
+        image: {type: String, required: true},
     },
 
     {timestamps: true}
