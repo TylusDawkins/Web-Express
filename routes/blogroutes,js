@@ -1,4 +1,0 @@
-const express = require("express");
-const blogRoutes = express.Router();
-const dbo = require("../db");
-const ObjectId = require("mongodb").ObjectId;
