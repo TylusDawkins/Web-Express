@@ -15,7 +15,8 @@
 .list {
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width:100%;
 }
 li {
     display:inline-block
