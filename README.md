@@ -13,7 +13,13 @@ Web-Express
  ## ***DESCRIPTION***
  ### This is a website design template for personal websites/small businesses. In it's conception it will be made for a free-lancer to quickly and easily build custom websites to fit client needs.
  &nbsp;
- 
+### Current Features Availabe
+*Blog Posts
+    * Let your patrons know what you have going on!
+*Menu
+    * We can create features that allow you to change and modify your own menu on your website!
+    * Will have Category filters in the near future
+ &nbsp; 
  ### ***Technologies***
  * HTML
  * CSS
