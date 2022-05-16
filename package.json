@@ -23,6 +23,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
@@ -31,6 +32,7 @@
     "mongoose": "^6.3.2",
     "morgan": "^1.10.0",
     "path": "^0.12.7",
-    "svelte": "^3.48.0"
+    "svelte": "^3.48.0",
+    "svelte-navigator": "^3.1.5"
   }
 }
